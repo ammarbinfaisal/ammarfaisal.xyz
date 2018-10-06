@@ -1,0 +1,28 @@
+$cutered: #b73228
+$cutegrey: #161717
+
+=columnify
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+=responsiveFont($small, $big)
+  @media sreen and (max-width: 650px)
+    font-size: $small
+  @media sreen and (min-width: 650px)
+    font-size: $big
+
+=responsize-width
+  max-width: 900px
+  @media (min-width: 650px)
+    width: 80%
+  @media (max-width: 650px)
+    width: 90%
+
+=responsive-font-lvar($font)
+  @media (max-width: 365px)
+    font-size: #{$font + 3px}
+  @media (max-width: 650px) and (min-width: 365px)
+    font-size: #{$font + 7px}
+  @media (min-width: 650px)
+    font-size: calc(.5vw + .7vh + #{$font})

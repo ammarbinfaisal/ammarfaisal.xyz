@@ -1,0 +1,84 @@
+@import "mixins.sass"
+
+#projectspage
+  padding: 5vh 0
+  @media (max-height: 900px) and (min-width: 365px)
+    padding: 7vh 3vw
+  @media (min-height: 900px)
+    padding: 5vh 3vw
+
+  a
+    color: $cutered
+
+  > h2.heading
+    text-align: center
+    margin-bottom: 5vh
+    +responsive-font-lvar(40px)
+
+  > .mark
+    +responsize-width
+    background-color: bisque
+    font-size: calc(1vh + 0.5vw + .8em)
+    margin: 7vh auto
+    padding: 7px
+    border: 1px #404040 solid
+    border-radius: 5px
+
+  > #projects
+    display: grid
+    grid-template-rows: auto auto
+    @media (max-height: 900px)
+      grid-gap: 7vh
+    @media (min-height: 900px)
+      grid-gap: 8vh
+
+    > .project
+      +responsize-width
+      border: 1px #000 solid
+      border-radius: 6px
+      background-color: #fff
+      margin: 0 auto
+      padding: 10px 3vw
+      font-family: monospace
+
+      > h3
+        color: $cutegrey
+        margin: 3vh auto
+        text-align: center
+        +responsive-font-lvar(27px)
+        font-family: Ubuntu, "Open sans", Roboto, sans-serif
+
+      > .links 
+        display: flex
+        justify-content: center
+        margin: 2vh auto
+        width: 50%
+
+        > a
+          margin: 0 12px
+          @media (max-width: 800px)
+            margin: 0 7px
+          color: $cutered
+          &:hover
+            color: darken($cutered, 20)
+          line-height: 1
+          +responsive-font-lvar(15px)
+          font-family:  Ubuntu, "Open sans", Roboto, sans-serif
+
+          > i
+            font-size: calc(.6vh + .4vw + .5em)
+
+      > p
+        @media (min-width: 650px)
+          margin: 2vh auto
+        @media (max-width: 650px)
+          margin: 4vh auto
+        @media (min-width: 800px)
+          margin: 3vh
+        +responsive-font-lvar(12px)
+        border-radius: 6px
+        background-color: #e4e4e4
+        padding: 6px
+      
+      img
+        width: 100%  

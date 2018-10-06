@@ -1,0 +1,52 @@
+@import 'mixins.sass'
+
+#indexpage  
+  height: 100vh
+  display: grid
+  grid-template-rows: 2fr 1fr
+  grid-gap: 5vh
+  @media screen and (max-height: 840px)
+    padding: 12vh 0
+
+  animation:
+    name: bg-color-change
+    duration: 16s
+    timing-function: step-in
+    iteration-count: infinite
+
+  .colored
+    animation:
+      name: color-change
+      duration: 16s
+      timing-function: step-in
+      iteration-count: infinite
+
+  .fab, #intro > h2
+    color: bisque
+
+  h1, 
+  h2,
+  ul
+    padding: 0 5vw
+    text-align: left
+
+  @import 'social.sass'
+  @import 'intro.sass'
+
+
+@keyframes bg-color-change
+  0%
+    background-color: $cutegrey
+  50%
+    background-color: #172831
+  100%
+    background-color: $cutegrey
+
+
+@keyframes color-change
+  0%
+    color: $cutered
+  50%
+    color: #32b9fe
+  100%
+    color: $cutered

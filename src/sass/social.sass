@@ -1,0 +1,33 @@
+@import "mixins.sass"
+  
+#social
+  +columnify
+
+  > h2
+    margin-bottom: 10px
+    font-size: calc(1vw + 2.5vh)
+      
+  ul
+    display: flex
+    flex-flow: row wrap
+    align-items: center
+    li
+      padding: 1vh 2vw
+      @media screen and (min-width: 800px)
+        margin: .6vw
+      @media screen and (max-width: 800px)
+        margin: 1vw
+
+    i
+      @media screen and (min-width: 1400px)
+        font-size: calc(2.2vw + 3vh)
+      @media screen and (min-width: 800px) and (max-width: 1400px)
+        font-size: calc(3vw + 3vh)
+      @media screen and (max-width: 800px)
+        font-size: calc(4vw + 2vh)
+      transition:
+        duration: .4s
+        timing-function: cubic-bezier(0.38, 0.37, 0.64, 1.27)
+        
+      &:hover
+        color: beige

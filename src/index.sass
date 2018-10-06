@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Hi+Melody|Delius+Swash+Caps')
+@import "sass/landing-pg.sass"
+@import "sass/projects.sass"
+
+html, body, p, ol, ul, li, blockquote, pre, hr, h1, h2, h3, h4, h5, h6
+  margin: 0
+  padding: 0
+
+ul
+  list-style: none
+
+button, input, select, textarea
+  margin: 0
+
+html
+  box-sizing: border-box
+
+*
+  box-sizing: inherit
+  &:before, &:after
+    box-sizing: inherit
+
+iframe
+  border: 0
+
+a
+  text-decoration: none
+
+h1, h2, p
+  font-weight: 300
+
+body
+  font-family: "Hi melody", cursive
+
+.heading
+  font-family: "Delius Swash Caps", cursive
+  color: $cutered
+
+h1, h2, h3, p, a
+  &::selection
+    color: beige
+    background-color: darken($cutered, 30)

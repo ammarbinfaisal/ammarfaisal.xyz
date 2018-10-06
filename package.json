@@ -1,0 +1,26 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "watch-styles": "sass --watch src/index.sass",
+    "dev": "concurrently \"react-scripts start\" \"npm run watch-styles\"",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "format": "prettier --write src/*.js src/*/*.js"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.1",
+    "gulp": "^3.9.1",
+    "prettier": "*"
+  }
+}

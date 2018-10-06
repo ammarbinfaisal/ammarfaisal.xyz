@@ -1,0 +1,17 @@
+@import "mixins.sass"
+
+#intro
+  +columnify
+
+  > h1
+    margin: 7px 0
+    @media screen and (max-width: 650px)
+      font-size: calc(1vw + 3.5vh)
+    @media screen and (min-width: 650px)
+      font-size: calc(1.2vw + 4.8vh)
+
+  > h2
+    @media screen and (max-width: 650px)
+      font-size: calc(1.8vw + 2.3vh)
+    @media screen and (min-width: 650px)
+      font-size: calc(1.5vw + 2.5vh)

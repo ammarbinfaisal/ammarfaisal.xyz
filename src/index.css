@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css?family=Hi+Melody|Delius+Swash+Caps");
+#indexpage {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-gap: 5vh;
+  animation-name: bg-color-change;
+  animation-duration: 16s;
+  animation-timing-function: step-in;
+  animation-iteration-count: infinite; }
+  @media screen and (max-height: 840px) {
+    #indexpage {
+      padding: 12vh 0; } }
+  #indexpage .colored {
+    animation-name: color-change;
+    animation-duration: 16s;
+    animation-timing-function: step-in;
+    animation-iteration-count: infinite; }
+  #indexpage .fab, #indexpage #intro > h2 {
+    color: bisque; }
+  #indexpage h1,
+  #indexpage h2,
+  #indexpage ul {
+    padding: 0 5vw;
+    text-align: left; }
+  #indexpage #social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    #indexpage #social > h2 {
+      margin-bottom: 10px;
+      font-size: calc(1vw + 2.5vh); }
+    #indexpage #social ul {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center; }
+      #indexpage #social ul li {
+        padding: 1vh 2vw; }
+        @media screen and (min-width: 800px) {
+          #indexpage #social ul li {
+            margin: 0.6vw; } }
+        @media screen and (max-width: 800px) {
+          #indexpage #social ul li {
+            margin: 1vw; } }
+      #indexpage #social ul i {
+        transition-duration: 0.4s;
+        transition-timing-function: cubic-bezier(0.38, 0.37, 0.64, 1.27); }
+        @media screen and (min-width: 1400px) {
+          #indexpage #social ul i {
+            font-size: calc(2.2vw + 3vh); } }
+        @media screen and (min-width: 800px) and (max-width: 1400px) {
+          #indexpage #social ul i {
+            font-size: calc(3vw + 3vh); } }
+        @media screen and (max-width: 800px) {
+          #indexpage #social ul i {
+            font-size: calc(4vw + 2vh); } }
+        #indexpage #social ul i:hover {
+          color: beige; }
+  #indexpage #intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    #indexpage #intro > h1 {
+      margin: 7px 0; }
+      @media screen and (max-width: 650px) {
+        #indexpage #intro > h1 {
+          font-size: calc(1vw + 3.5vh); } }
+      @media screen and (min-width: 650px) {
+        #indexpage #intro > h1 {
+          font-size: calc(1.2vw + 4.8vh); } }
+    @media screen and (max-width: 650px) {
+      #indexpage #intro > h2 {
+        font-size: calc(1.8vw + 2.3vh); } }
+    @media screen and (min-width: 650px) {
+      #indexpage #intro > h2 {
+        font-size: calc(1.5vw + 2.5vh); } }
+
+@keyframes bg-color-change {
+  0% {
+    background-color: #161717; }
+  50% {
+    background-color: #172831; }
+  100% {
+    background-color: #161717; } }
+@keyframes color-change {
+  0% {
+    color: #b73228; }
+  50% {
+    color: #32b9fe; }
+  100% {
+    color: #b73228; } }
+#projectspage {
+  padding: 5vh 0; }
+  @media (max-height: 900px) and (min-width: 365px) {
+    #projectspage {
+      padding: 7vh 3vw; } }
+  @media (min-height: 900px) {
+    #projectspage {
+      padding: 5vh 3vw; } }
+  #projectspage a {
+    color: #b73228; }
+  #projectspage > h2.heading {
+    text-align: center;
+    margin-bottom: 5vh; }
+    @media (max-width: 365px) {
+      #projectspage > h2.heading {
+        font-size: 43px; } }
+    @media (max-width: 650px) and (min-width: 365px) {
+      #projectspage > h2.heading {
+        font-size: 47px; } }
+    @media (min-width: 650px) {
+      #projectspage > h2.heading {
+        font-size: calc(.5vw + .7vh + 40px); } }
+  #projectspage > .mark {
+    max-width: 900px;
+    background-color: bisque;
+    font-size: calc(1vh + 0.5vw + .8em);
+    margin: 7vh auto;
+    padding: 7px;
+    border: 1px #404040 solid;
+    border-radius: 5px; }
+    @media (min-width: 650px) {
+      #projectspage > .mark {
+        width: 80%; } }
+    @media (max-width: 650px) {
+      #projectspage > .mark {
+        width: 90%; } }
+  #projectspage > #projects {
+    display: grid;
+    grid-template-rows: auto auto; }
+    @media (max-height: 900px) {
+      #projectspage > #projects {
+        grid-gap: 7vh; } }
+    @media (min-height: 900px) {
+      #projectspage > #projects {
+        grid-gap: 8vh; } }
+    #projectspage > #projects > .project {
+      max-width: 900px;
+      border: 1px #000 solid;
+      border-radius: 6px;
+      background-color: #fff;
+      margin: 0 auto;
+      padding: 10px 3vw;
+      font-family: monospace; }
+      @media (min-width: 650px) {
+        #projectspage > #projects > .project {
+          width: 80%; } }
+      @media (max-width: 650px) {
+        #projectspage > #projects > .project {
+          width: 90%; } }
+      #projectspage > #projects > .project > h3 {
+        color: #161717;
+        margin: 3vh auto;
+        text-align: center;
+        font-family: Ubuntu, "Open sans", Roboto, sans-serif; }
+        @media (max-width: 365px) {
+          #projectspage > #projects > .project > h3 {
+            font-size: 30px; } }
+        @media (max-width: 650px) and (min-width: 365px) {
+          #projectspage > #projects > .project > h3 {
+            font-size: 34px; } }
+        @media (min-width: 650px) {
+          #projectspage > #projects > .project > h3 {
+            font-size: calc(.5vw + .7vh + 27px); } }
+      #projectspage > #projects > .project > .links {
+        display: flex;
+        justify-content: center;
+        margin: 2vh auto;
+        width: 50%; }
+        #projectspage > #projects > .project > .links > a {
+          margin: 0 12px;
+          color: #b73228;
+          line-height: 1;
+          font-family: Ubuntu, "Open sans", Roboto, sans-serif; }
+          @media (max-width: 800px) {
+            #projectspage > #projects > .project > .links > a {
+              margin: 0 7px; } }
+          #projectspage > #projects > .project > .links > a:hover {
+            color: #631b16; }
+          @media (max-width: 365px) {
+            #projectspage > #projects > .project > .links > a {
+              font-size: 18px; } }
+          @media (max-width: 650px) and (min-width: 365px) {
+            #projectspage > #projects > .project > .links > a {
+              font-size: 22px; } }
+          @media (min-width: 650px) {
+            #projectspage > #projects > .project > .links > a {
+              font-size: calc(.5vw + .7vh + 15px); } }
+          #projectspage > #projects > .project > .links > a > i {
+            font-size: calc(.6vh + .4vw + .5em); }
+      #projectspage > #projects > .project > p {
+        border-radius: 6px;
+        background-color: #e4e4e4;
+        padding: 6px; }
+        @media (min-width: 650px) {
+          #projectspage > #projects > .project > p {
+            margin: 2vh auto; } }
+        @media (max-width: 650px) {
+          #projectspage > #projects > .project > p {
+            margin: 4vh auto; } }
+        @media (min-width: 800px) {
+          #projectspage > #projects > .project > p {
+            margin: 3vh; } }
+        @media (max-width: 365px) {
+          #projectspage > #projects > .project > p {
+            font-size: 15px; } }
+        @media (max-width: 650px) and (min-width: 365px) {
+          #projectspage > #projects > .project > p {
+            font-size: 19px; } }
+        @media (min-width: 650px) {
+          #projectspage > #projects > .project > p {
+            font-size: calc(.5vw + .7vh + 12px); } }
+      #projectspage > #projects > .project img {
+        width: 100%; }
+
+html, body, p, ol, ul, li, blockquote, pre, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+button, input, select, textarea {
+  margin: 0; }
+
+html {
+  box-sizing: border-box; }
+
+* {
+  box-sizing: inherit; }
+  *:before, *:after {
+    box-sizing: inherit; }
+
+iframe {
+  border: 0; }
+
+a {
+  text-decoration: none; }
+
+h1, h2, p {
+  font-weight: 300; }
+
+body {
+  font-family: "Hi melody", cursive; }
+
+.heading {
+  font-family: "Delius Swash Caps", cursive;
+  color: #b73228; }
+
+h1::selection, h2::selection, h3::selection, p::selection, a::selection {
+  color: beige;
+  background-color: #39100d; }
+
+/*# sourceMappingURL=index.css.map */
