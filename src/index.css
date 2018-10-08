@@ -5,19 +5,19 @@
   grid-template-rows: 2fr 1fr;
   grid-gap: 5vh;
   animation-name: bg-color-change;
-  animation-duration: 16s;
-  animation-timing-function: step-in;
+  animation-duration: 20s;
+  animation-timing-function: ease-out;
   animation-iteration-count: infinite; }
   @media screen and (max-height: 840px) {
     #indexpage {
       padding: 12vh 0; } }
   #indexpage .colored {
     animation-name: color-change;
-    animation-duration: 16s;
-    animation-timing-function: step-in;
+    animation-duration: 20s;
+    animation-timing-function: ease-out;
     animation-iteration-count: infinite; }
   #indexpage .fab, #indexpage #intro > h2 {
-    color: bisque; }
+    color: azure; }
   #indexpage h1,
   #indexpage h2,
   #indexpage ul {
@@ -78,15 +78,19 @@
 @keyframes bg-color-change {
   0% {
     background-color: #161717; }
-  50% {
+  30% {
+    background-color: #172831; }
+  60% {
     background-color: #172831; }
   100% {
     background-color: #161717; } }
 @keyframes color-change {
   0% {
     color: #b73228; }
-  50% {
-    color: #32b9fe; }
+  30% {
+    color: #4d8fb3; }
+  60% {
+    color: #4d8fb3; }
   100% {
     color: #b73228; } }
 #projectspage {

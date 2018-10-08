@@ -6,6 +6,8 @@ import LandingPage from "./components/Landing";
 import Projects from "./components/Projects";
 import NoMatch from "./components/NoMatch";
 
+import "./index.css"
+
 class App extends PureComponent {
 	render() {
 		return (

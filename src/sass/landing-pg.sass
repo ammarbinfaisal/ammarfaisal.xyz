@@ -10,19 +10,19 @@
 
   animation:
     name: bg-color-change
-    duration: 16s
-    timing-function: step-in
+    duration: 20s
+    timing-function: ease-out
     iteration-count: infinite
 
   .colored
     animation:
       name: color-change
-      duration: 16s
-      timing-function: step-in
+      duration: 20s
+      timing-function: ease-out
       iteration-count: infinite
 
   .fab, #intro > h2
-    color: bisque
+    color: azure
 
   h1, 
   h2,
@@ -37,7 +37,9 @@
 @keyframes bg-color-change
   0%
     background-color: $cutegrey
-  50%
+  30%
+    background-color: #172831
+  60%
     background-color: #172831
   100%
     background-color: $cutegrey
@@ -46,7 +48,9 @@
 @keyframes color-change
   0%
     color: $cutered
-  50%
-    color: #32b9fe
+  30%
+    color: #4d8fb3
+  60%
+    color: #4d8fb3
   100%
     color: $cutered

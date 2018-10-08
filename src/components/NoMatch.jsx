@@ -1,4 +1,5 @@
 import React from "react";
+import Helmet from "react-helmet";
 
 const NoMatch = () => (
 	<div
@@ -17,11 +18,12 @@ const NoMatch = () => (
 				"-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
 		}}
 	>
+	<Helmet><title>404! Not Found</title></Helmet>
 		<h1
 			style={{
 				fontWeight: 500,
 				color: "#404040",
-				fontSize: "calc(1.4vw + 3.2vh)",
+				fontSize: "calc(2.8vw + 1.2vh + 2em)",
 				transform: "translateY(-20vh)",
 			}}
 		>
@@ -30,8 +32,9 @@ const NoMatch = () => (
 		<p
 			style={{
 				color: "#404040",
-				fontSize: "calc(.8vw + 1.4vh + 1em)",
-				marginTop: "3vh",
+				fontSize: "calc(.8vw + .8vh + 1em)",
+				marginTop: "calc(2vh + .7em)",
+				padding: "0 calc(2vw + .7em)",
 				lineHeight: 1.5,
 				transform: "translateY(-20vh)",
 			}}
