@@ -34,21 +34,15 @@ class Projects extends PureComponent {
 				</p>
 				<div id="projects">
 					<Project
-						github="https://github.com/ammarbinfaisal/remind-me"
-						title="remind-me"
-						info="a command line app to remind you anything after specified minutes"
-						techUsed="this is my first app in python"
-					/>
-					<Project
 						github="https://prettinitgithub.com/ammarbinfaisal/"
 						title="Memory Watcher"
 						img="memory-watcher.png"
 						info="a command line app to monitor memory usage and notify when less tahn one GiB of memory is free"
-						techUsed="made with plain nodejs"
+						techUsed="made with plain nodejs and some shell scripts"
 					/>
 					<Project
 						github="https://github.com/ammarbinfaisal/Merriam-Webster-Bot"
-						link="https://t.me/merriamwebsterbot"
+						link="https://telegram.me/merriamwebsterbot"
 						title="Merriam Webster Bot"
 						img="mw-bot.png"
 						info="a telegram bot which sends link to the Merriam&nbsp;Webster's webpage defining the word which you send it"
