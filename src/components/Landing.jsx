@@ -9,7 +9,7 @@ const Intro = () => (
         <h1 className="heading colored">I am Ammar,</h1>
         <h2>
             a hobbyist coder, currently in highschool who is learning/exploring web and app development with nodejs and python
-            and has made some <Link to="projects" className="colored">cool&nbsp;stuff</Link> in them.
+            and has made some <Link to="projects" className="colored">simple&nbsp;stuff</Link> in them.
         </h2>
     </div>
 );
