@@ -4,6 +4,8 @@ import App from "./App";
 import Unsupported from "./Unsupported";
 import registerServiceWorker from "./registerServiceWorker";
 
+if(!/https/.test(window.URL))
+    window.open("https://ammar.netlify.com");
 if (document.body.style.grid === "")
     ReactDOM.render(<App />, document.getElementById("root"));
 else
