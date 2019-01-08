@@ -24,7 +24,7 @@ class Project extends PureComponent {
 class Projects extends PureComponent {
 	render() {
 		return (
-			<div id="projectspage">
+			<div id="projectspage" className="itim">
 				<Helmet>
 					<title>Ammar's Projects</title>
 				</Helmet>

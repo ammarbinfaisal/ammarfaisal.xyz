@@ -2,15 +2,18 @@ import React, { PureComponent } from "react";
 import { Link } from "react-router-dom";
 import Helmet from "react-helmet";
 import Social from "./Social"
+import Footer from "./Footer";
 
 const Intro = () => (
-    <div id="intro">
-        <h2>Hello there,</h2>
+    <div id="intro" className="sans">
+        <p className="itim">Hello there,</p>
         <h1 className="heading colored">I am Ammar,</h1>
-        <h2>
-            a hobbyist coder, currently in highschool who is learning/exploring web and app development with nodejs and python
-            and has made some <Link to="projects" className="colored">simple&nbsp;stuff</Link> in them.
-        </h2>
+        <p className="itim">
+            a hobbyist coder, currently in highschool who is learning and exploring web development.<br />
+            I can make wesbites/apps for you using reactjs on frontend and nodejs/golang on backend.<br />
+            I have made some open source stuff which you can check out <Link to="projects" className="colored">here</Link>.
+        </p>
+        <Footer />
     </div>
 );
 
@@ -21,6 +24,7 @@ class IndexPage extends PureComponent {
                 <Helmet>
                     <title>Ammar Faisal</title>
                 </Helmet>
+
                 <Intro />
                 <Social />
             </div>

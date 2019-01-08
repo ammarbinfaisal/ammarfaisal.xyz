@@ -1,6 +1,7 @@
 @import "mixins.sass"
 
 #projectspage
+  background: beige
   padding: 5vh 0
   @media (max-height: 900px) and (min-width: 365px)
     padding: 7vh 3vw
@@ -13,16 +14,16 @@
   > h2.heading
     text-align: center
     margin-bottom: 5vh
-    +responsive-font-lvar(40px)
+    +responsive-font(1.8em)
 
   > .mark
     +responsize-width
+    +responsive-font(1em)
     background-color: bisque
-    font-size: calc(1vh + 0.5vw + .8em)
     margin: 7vh auto
-    padding: 7px
-    border: 1px #404040 solid
+    padding: 6px
     border-radius: 5px
+    box-shadow: inset 0px 0px 10px #000
 
   > #projects
     display: grid
@@ -34,25 +35,23 @@
 
     > .project
       +responsize-width
-      border: 1px #000 solid
-      border-radius: 6px
-      background-color: #fff
+      background-color: #ffe
       margin: 0 auto
       padding: 10px 3vw
-      font-family: monospace
+      border-radius: 6px
+      box-shadow: inset 0px 0px 10px #000
 
       > h3
         color: $cutegrey
         margin: 3vh auto
         text-align: center
-        +responsive-font-lvar(27px)
-        font-family: Ubuntu, "Open sans", Roboto, sans-serif
+        +responsive-font(1.4em)
 
       > .links 
         display: flex
         justify-content: center
         margin: 2vh auto
-        width: 50%
+        width: 60%
 
         > a
           margin: 0 12px
@@ -66,7 +65,7 @@
           font-family:  Ubuntu, "Open sans", Roboto, sans-serif
 
           > i
-            font-size: calc(.6vh + .4vw + .5em)
+            font-size: calc(.3vh + .2vw + .6em)
 
       > p
         @media (min-width: 650px)
@@ -75,7 +74,7 @@
           margin: 4vh auto
         @media (min-width: 800px)
           margin: 3vh
-        +responsive-font-lvar(12px)
+        +responsive-font(.9em)
         border-radius: 6px
         background-color: #e4e4e4
         padding: 6px

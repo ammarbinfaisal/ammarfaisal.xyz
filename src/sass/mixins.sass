@@ -1,4 +1,4 @@
-$cutered: #b73228
+$cutered: #d71001
 $cutegrey: #161717
 
 =columnify
@@ -6,11 +6,13 @@ $cutegrey: #161717
   flex-direction: column
   justify-content: center
 
-=responsiveFont($small, $big)
-  @media sreen and (max-width: 650px)
-    font-size: $small
-  @media sreen and (min-width: 650px)
-    font-size: $big
+=responsive-font($font)
+  @media screen and (max-width: 650px)
+    font-size: calc(.2vw + .3vh + #{$font})
+  @media screen and (min-width: 650px)
+    font-size: calc(.2vw + .3vh + #{$font + .2em})
+
+
 
 =responsize-width
   max-width: 900px
@@ -21,8 +23,8 @@ $cutegrey: #161717
 
 =responsive-font-lvar($font)
   @media (max-width: 365px)
-    font-size: #{$font + 3px}
+    font-size: #{$font + 2px}
   @media (max-width: 650px) and (min-width: 365px)
-    font-size: #{$font + 7px}
+    font-size: #{$font + 4px}
   @media (min-width: 650px)
-    font-size: calc(.5vw + .7vh + #{$font})
+    font-size: calc(.2vw + .3vh + #{$font})

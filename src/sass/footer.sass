@@ -1,0 +1,22 @@
+#footer
+    position: absolute
+    bottom: 0
+    z-index: 10
+    @media (max-height: 500px) and (max-width: 650px)
+        bottom: -10vh
+    display: grid
+    width: 100%
+    @media (min-width: 650px)
+        // cant understand why this should be 61, 
+        // I thought 60 becoz indepage has grid columns 3fr 2fr
+        width: 63%  
+    padding: 4px 20vw
+    grid-template-columns: 1fr 1fr
+    text-align: center
+    border:
+        bottom: beige solid 2px 
+        top: beige solid 2px
+
+    > *
+        text-align: center
+        +responsive-font(.9em)

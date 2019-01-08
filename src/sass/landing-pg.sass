@@ -3,10 +3,30 @@
 #indexpage  
   height: 100vh
   display: grid
-  grid-template-rows: 2fr 1fr
-  grid-gap: 5vh
-  @media screen and (max-height: 840px)
-    padding: 12vh 0
+  @media (min-width: 651px)
+    grid-template-columns: 5fr 3fr
+    grid-gap: 2vw
+  @media (max-width: 650px)
+    grid-template-rows: 3fr 1fr
+  @media (max-height: 500px) and (max-width: 650px)
+    height: 110vh
+    grid-template-rows: 5fr 2fr
+    grid-gap: 5vh
+
+  .fab, #intro > p
+    color: beige
+
+  h1, 
+  p,
+  ul
+    padding: 0 5vw
+    text-align: left
+
+  @import 'social.sass'
+  @import 'intro.sass'
+
+
+  /* ANIMATIONS */
 
   animation:
     name: bg-color-change
@@ -21,18 +41,12 @@
       timing-function: ease-out
       iteration-count: infinite
 
-  .fab, #intro > h2
-    color: azure
-
-  h1, 
-  h2,
-  ul
-    padding: 0 5vw
-    text-align: left
-
-  @import 'social.sass'
-  @import 'intro.sass'
-
+  .fab
+    animation: 
+      name: social-color-change
+      duration: 20s
+      timing-function: ease-out
+      iteration-count: infinite      
 
 @keyframes bg-color-change
   0%
@@ -44,13 +58,24 @@
   100%
     background-color: $cutegrey
 
+@keyframes social-color-change
+  0%
+    color: $cutegrey
+  30%
+    color: #172831
+  60%
+    color: #172831
+  100%
+    color: $cutegrey
+
+
 
 @keyframes color-change
   0%
     color: $cutered
   30%
-    color: #4d8fb3
+    color: #009ef5
   60%
-    color: #4d8fb3
+    color: #009ef5
   100%
     color: $cutered

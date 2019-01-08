@@ -23,7 +23,7 @@ const NoMatch = () => (
 			style={{
 				fontWeight: 500,
 				color: "#404040",
-				fontSize: "calc(2.8vw + 1.2vh + 2em)",
+				fontSize: "calc(.5vw + .3vh + 2em)",
 				transform: "translateY(-20vh)",
 			}}
 		>
@@ -32,7 +32,7 @@ const NoMatch = () => (
 		<p
 			style={{
 				color: "#404040",
-				fontSize: "calc(.8vw + .8vh + 1em)",
+				fontSize: "calc(.3vw + .3vh + 1em)",
 				marginTop: "calc(2vh + .7em)",
 				padding: "0 calc(2vw + .7em)",
 				lineHeight: 1.5,

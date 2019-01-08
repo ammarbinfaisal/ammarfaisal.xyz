@@ -2,7 +2,7 @@ import React from "react";
 
 const Social = () => (
     <div id="social">
-        <h2 className="heading colored">Find me on :</h2>
+        <p className="heading colored">Find me on :</p>
         <ul>
             <li>
                 <a
@@ -20,15 +20,6 @@ const Social = () => (
                     href="http://instagram.com/ammarbinfaisal"
                 >
                     <i className="fab fa-instagram" />
-                </a>
-            </li>
-            <li>
-                <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="http://t.me/ammarbinfaisal"
-                >
-                    <i className="fab fa-telegram-plane" />
                 </a>
             </li>
             <li>
