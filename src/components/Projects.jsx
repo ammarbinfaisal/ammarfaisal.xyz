@@ -37,7 +37,7 @@ class Projects extends PureComponent {
 						github="https://prettinitgithub.com/ammarbinfaisal/"
 						title="Memory Watcher"
 						img="memory-watcher.png"
-						info="a command line app to monitor memory usage and notify when less tahn one GiB of memory is free"
+						info="a command line app to monitor memory usage and notify when less than one GiB of memory is free"
 						techUsed="made with plain nodejs and some shell scripts"
 					/>
 					<Project
