@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import Social from "./Social"
 // import Footer from "./Footer";
 
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-134084954-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 const Intro = () => (
     <div id="intro" className="sans">
         <p className="itim">Hello there,</p>

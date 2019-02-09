@@ -213,17 +213,8 @@
             font-size: calc(.3vh + .2vw + .6em); }
       #projectspage > #projects > .project > p {
         border-radius: 6px;
-        background-color: #e4e4e4;
+        background-color: rgba(0, 0, 0, 0.05);
         padding: 6px; }
-        @media (min-width: 650px) {
-          #projectspage > #projects > .project > p {
-            margin: 2vh auto; } }
-        @media (max-width: 650px) {
-          #projectspage > #projects > .project > p {
-            margin: 4vh auto; } }
-        @media (min-width: 800px) {
-          #projectspage > #projects > .project > p {
-            margin: 3vh; } }
         @media screen and (max-width: 650px) {
           #projectspage > #projects > .project > p {
             font-size: calc(.2vw + .3vh + 0.9em); } }

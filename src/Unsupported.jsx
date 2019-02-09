@@ -19,7 +19,7 @@ const Unsupported = () => (
                 {
                     fontFamily: "Ubuntu, \"Open Sans\", Roboto, sans-serif",
                     color: "#404040",
-                    fontSize: "calc(.8vw + 1.4vh + .7em)",
+                    fontSize: "2em",
                     position: "absolute",
                     top: "45%",
                     left: "50%",
