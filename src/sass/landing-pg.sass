@@ -3,6 +3,7 @@
 #indexpage  
   height: 100vh
   display: grid
+  background-color: $cutegrey
   @media (min-width: 651px)
     grid-template-columns: 5fr 3fr
     grid-gap: 2vw
@@ -35,47 +36,10 @@
     iteration-count: infinite
 
   .colored
-    animation:
-      name: color-change
-      duration: 20s
-      timing-function: ease-out
-      iteration-count: infinite
+    color: $cutered
 
   .fab
-    animation: 
-      name: social-color-change
-      duration: 20s
-      timing-function: ease-out
-      iteration-count: infinite      
-
-@keyframes bg-color-change
-  0%
-    background-color: $cutegrey
-  30%
-    background-color: #172831
-  60%
-    background-color: #172831
-  100%
-    background-color: $cutegrey
-
-@keyframes social-color-change
-  0%
     color: $cutegrey
-  30%
-    color: #172831
-  60%
-    color: #172831
-  100%
-    color: $cutegrey
+    @media screen and (max-width: 650px)
+      color: beige
 
-
-
-@keyframes color-change
-  0%
-    color: $cutered
-  30%
-    color: #009ef5
-  60%
-    color: #009ef5
-  100%
-    color: $cutered

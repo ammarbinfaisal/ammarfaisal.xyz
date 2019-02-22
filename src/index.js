@@ -1,12 +1,15 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { render } from "react-snapshot";
 import App from "./App";
 import Unsupported from "./Unsupported";
 import registerServiceWorker from "./registerServiceWorker";
 
-if (document.body.style.grid === "")
-    ReactDOM.render(<App />, document.getElementById("root"));
-else
-    ReactDOM.render(<Unsupported />, document.getElementById("root"));
+
+const rootElement = document.getElementById("root");
+
+if(document.body.style.grid !== "")
+	render(<Unsupported />, rootElement);
+
+render(<App />, rootElement);
 
 registerServiceWorker();

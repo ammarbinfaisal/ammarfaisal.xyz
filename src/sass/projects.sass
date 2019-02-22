@@ -1,7 +1,8 @@
 @import "mixins.sass"
 
 #projectspage
-  background: beige
+  background: $cutegrey
+  color: beige
   padding: 5vh 0
   @media (max-height: 900px) and (min-width: 365px)
     padding: 7vh 3vw
@@ -9,69 +10,71 @@
     padding: 5vh 3vw
 
   a
-    color: $cutered
+    color: darken(beige, 10%)
+    text-decoration: underline
+    transition: .2s
+    &:hover
+      color: $cutebisque
+
 
   > h2.heading
     text-align: center
+    color: beige
     margin-bottom: 5vh
     +responsive-font(1.8em)
 
   > .mark
     +responsize-width
     +responsive-font(1em)
-    background-color: bisque
+    text-align: center
     margin: 7vh auto
-    padding: 6px
-    border-radius: 5px
-    box-shadow: inset 0px 0px 10px #000
+    padding: 10px 3vw
 
   > #projects
     display: grid
     grid-template-rows: auto auto
-    @media (max-height: 900px)
-      grid-gap: 7vh
-    @media (min-height: 900px)
-      grid-gap: 8vh
+    grid-gap: 8vh
 
     > .project
       +responsize-width
-      background-color: #ffe
       margin: 0 auto
-      padding: 10px 3vw
-      border-radius: 6px
-      box-shadow: inset 0px 0px 16px #000
+      background-color: lighten($cutegrey, 5%)
+      border-bottom: 6px solid bisque
+      display: grid
+      @media screen and (min-width: 651px)
+        grid-template-columns: 5fr 1fr
+      +responsive-font(1em)
+      
+      > div
+        padding: 4px
+        @media screen and (min-width: 350px)
+          padding: 18px
+        overflow-x: hidden
+        
+        > h3
+          margin: 3vh auto
+          text-align: center
+          +responsive-font(1.3em)
+        i
+          font-size: calc(.3vh + .2vw + .6em)
+          
+        > p
+          text-align: center
+          max-width: 720px
+          margin: 18px auto
 
-      > h3
-        color: $cutegrey
-        margin: 3vh auto
-        text-align: center
-        +responsive-font(1.4em)
-
-      > .links 
+        
+      > .links
         display: flex
+        @media screen and (min-width: 651px)
+          flex-direction: column
         justify-content: center
-        margin: 2vh auto
-        width: 60%
+        text-align: center
 
         > a
-          margin: 0 12px
+          margin: 12px
           @media (max-width: 800px)
-            margin: 0 7px
-          color: $cutered
-          &:hover
-            color: darken($cutered, 20)
+            margin: 7px
           line-height: 1
           +responsive-font-lvar(15px)
           font-family:  Ubuntu, "Open sans", Roboto, sans-serif
-
-          > i
-            font-size: calc(.3vh + .2vw + .6em)
-
-      > p
-        +responsive-font(.9em)
-        border-radius: 6px
-        background-color: rgba(0, 0, 0, 0.05)
-        padding: 6px
-      
-      img
-        width: 100%  

@@ -1,5 +1,6 @@
-$cutered: #d71001
+$cutered: #fc5346
 $cutegrey: #161717
+$cutebisque: darken(bisque, 10%)
 
 =columnify
   display: flex
@@ -10,16 +11,11 @@ $cutegrey: #161717
   @media screen and (max-width: 650px)
     font-size: calc(.2vw + .3vh + #{$font})
   @media screen and (min-width: 650px)
-    font-size: calc(.2vw + .3vh + #{$font + .2em})
-
-
+    font-size: calc(.2vw + .3vh + #{$font + .1em})
 
 =responsize-width
-  max-width: 900px
-  @media (min-width: 650px)
-    width: 80%
-  @media (max-width: 650px)
-    width: 90%
+  max-width: 1200px
+  width: 90%
 
 =responsive-font-lvar($font)
   @media (max-width: 365px)
