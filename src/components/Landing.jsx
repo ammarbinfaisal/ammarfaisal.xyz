@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react";
 import { Link } from "react-router-dom";
-import Social from "./Social"
+import Social from "./Social";
+import Helmet from "react-helmet";
 // import Footer from "./Footer";
 
 import ReactGA from 'react-ga';
@@ -24,6 +25,9 @@ class IndexPage extends PureComponent {
     render() {
         return (
             <div id="indexpage">
+		<Helmet>
+			<title>Malik Ammar Faisal</title>
+		</Helmet>
                 <Intro />
                 <Social />
             </div>
