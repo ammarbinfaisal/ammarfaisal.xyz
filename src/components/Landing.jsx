@@ -15,7 +15,7 @@ const Intro = () => (
         <p className="itim">
             a hobbyist coder, currently in highschool who is learning and exploring web development.<br />
             I can make websites/webapps for you using reactjs on frontend and nodejs on backend.<br />
-            I have made some open source stuff which you can check out <Link to="projects" className="colored">here</Link>.
+            I have made some stuff which you can check out <Link to="projects" className="colored">here</Link>.
         </p>
         {/* <Footer /> */}
     </div>

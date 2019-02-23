@@ -35,7 +35,7 @@ class Project extends Component {
 					<p className="tech">{this.props.techUsed}</p>
 				</div>
 				<div className="links">
-					{this.props.github ? <a href={this.props.github} rel="noopeneer norefferer" target="_blank">Github</a> : ""}
+					{this.props.source ? <a href={this.props.source} rel="noopeneer norefferer" target="_blank">Source</a> : ""}
 					{this.props.link ? <a href={this.props.link} rel="noopeneer norefferer" target="_blank">Link&nbsp;<i className="fas fa-external-link-alt fa-xs"></i></a> : ""}
 				</div>
 			</div>
@@ -68,7 +68,7 @@ class Projects extends PureComponent {
 						techUsed="made with gatsbyjs and used netlify cms for content management."
 					/>
 					<Project
-						github="https://prettinitgithub.com/ammarbinfaisal/depson"
+						source="https://prettinitgithub.com/ammarbinfaisal/depson"
 						link="https://npmjs.com/package/depson"
 						title="depson"
 						key={++indexOfProject}
@@ -76,7 +76,7 @@ class Projects extends PureComponent {
 						techUsed="made in nodejs"
 					/>
 					<Project
-						github="https://github.com/ammarbinfaisal/prettinit"
+						source="https://github.com/ammarbinfaisal/prettinit"
 						link="https://npmjs.com/package/prettinit"
 						title="prettinit"
 						key={++indexOfProject}
@@ -87,11 +87,12 @@ class Projects extends PureComponent {
 						link="https://dict.surge.sh"
 						title="dict.surge.sh"
 						key={++indexOfProject}
+						source="https://github.com/ammarbinfaisal/dict"
 						info="a dictionary progressive webapp."
 						techUsed="made with reactjs and uses an api which procures definitions from google's dictionary using webscraping."
 					/>
 					<Project
-						github="https://github.com/ammarbinfaisal/terminal-timer"
+						source="https://github.com/ammarbinfaisal/terminal-timer"
 						link="https://npmjs.com/package/terminal-timer"
 						title="terminal timer"
 						key={++indexOfProject}
@@ -99,7 +100,7 @@ class Projects extends PureComponent {
 						techUsed="made in nodejs"
 					/>
 					<Project
-						github="https://prettinitgithub.com/ammarbinfaisal/"
+						source="https://prettinitgithub.com/ammarbinfaisal/"
 						title="Memory Watcher"
 						key={++indexOfProject}
 						info="a command line app to monitor memory usage and notify when less than one GiB of memory is free"
@@ -113,7 +114,7 @@ class Projects extends PureComponent {
 						techUsed="made with html(pug), css(sass) and vanilla js"
 					/>
 					<Project
-						github="https://github.com/ammarbinfaisal/Merriam-Webster-Bot"
+						source="https://github.com/ammarbinfaisal/Merriam-Webster-Bot"
 						link="https://telegram.me/merriamwebsterbot"
 						title="Merriam Webster Bot"
 						key={++indexOfProject}
