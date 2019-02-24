@@ -2,6 +2,11 @@
 
 #intro
   +columnify
+  transform: translateY(100%)
+  animation: 
+    name: fade-down
+    duration: 1.6s
+    fill-mode: forwards
 
   > h1
     margin: 7px 0
@@ -14,3 +19,15 @@
     +responsive-font(.9em)
 
   @import "footer.sass"
+
+
+@keyframes fade-down
+  0%
+    transform: translateX(-100%) translateY(-80%)
+    opacity: 0
+  50%
+    transform: translateX(-10%) translateY(-20%) scale(1.2)
+    opacity: 0.8
+  100%
+    transform: translateX(0) translateY(0)
+    opacity: 1

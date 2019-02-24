@@ -7,19 +7,20 @@ class Project extends Component {
 		super(props);
 		this.state = {
 			opacity: 0,
+			transform: "translateY(25%)",
 			key: ++indexOfProject
 		}
 	}
 	componentDidMount() {
 		const fadeIn = () => {
 			const el = document.querySelector(`#project${this.state.key}`);
-			if(el){
+			if (el) {
 				const topOffset = el.offsetTop;
 				const scrolledPixels = window.scrollY;
 				if (topOffset > scrolledPixels - 300 && topOffset <= (scrolledPixels + window.innerHeight))
-					this.setState({ opacity: 1 })
+					this.setState({ opacity: 1, transform: "translateY(0)" })
 				else
-					this.setState({ opacity: 0 })
+					this.setState({ opacity: 0, transform: "translateY(25%)" })
 			}
 		}
 		fadeIn();
@@ -28,7 +29,7 @@ class Project extends Component {
 	}
 	render() {
 		return (
-			<div className="project" style={{ opacity: this.state.opacity, transition: `1s`, transitionDelay: `${(this.state.key / 10) * .1}s` }} id={`project${this.state.key}`}>
+			<div className="project" style={{ opacity: this.state.opacity, transform: this.state.transform, transition: `${.8 + this.state.key / 8}s`, transitionDelay: `${.8 - (this.state.key / 8)}s` }} id={`project${this.state.key}`}>
 				<div>
 					<h3>{this.props.title}</h3>
 					<p className="info">{this.props.info}</p>
@@ -36,7 +37,7 @@ class Project extends Component {
 				</div>
 				<div className="links">
 					{this.props.source ? <a href={this.props.source} rel="noopeneer norefferer" target="_blank">Source</a> : ""}
-					{this.props.link ? <a href={this.props.link} rel="noopeneer norefferer" target="_blank">Link&nbsp;<i className="fas fa-external-link-alt fa-xs"></i></a> : ""}
+					{this.props.link ? <a href={this.props.link} rel="noopeneer norefferer" target="_blank">Link<i className="fas fa-external-link-alt fa-xs"></i></a> : ""}
 				</div>
 			</div>
 		);

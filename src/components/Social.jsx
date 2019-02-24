@@ -2,7 +2,7 @@ import React from "react";
 
 const Social = () => (
     <div id="social">
-        <p className="heading colored">Find me on :</p>
+        <p className="heading">Find me on :</p>
         <ul>
             <li>
                 <a
