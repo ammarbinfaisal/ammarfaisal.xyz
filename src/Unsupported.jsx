@@ -11,9 +11,6 @@ const Unsupported = () => (
             }
         }
     >
-    <Helmet>
-        <title>Stupid browser</title>
-    </Helmet>
         <p
             style={
                 {
