@@ -1,0 +1,21 @@
+[[redirects]]
+  from = "/projects"
+  to = "/index.html"
+
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+  
+[[headers]]
+  for "/*.js"
+  [headers.values]
+    Cache-Control: max-age=172800
+
+[[headers]]
+  for "/*.css"
+  [headers.values]
+    Cache-Control: max-age=172800
