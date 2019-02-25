@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Itim|Delius+Swash+Caps')
+@import "sass/landing-pg.sass"
+@import "sass/projects.sass"
+
+html, body, p, ol, ul, li, blockquote, pre, hr, h1, h2, h3, h4, h5, h6
+  margin: 0
+  padding: 0
+
+ul
+  list-style: none
+
+button, input, select, textarea
+  margin: 0
+
+html
+  box-sizing: border-box
+  font-size: calc(.2vh + .2vw + .9em)
+
+body
+  position: relative
+
+body::-webkit-scrollbar 
+  width: 1.2em
+
+body::-webkit-scrollbar-track
+  background-color: $cutegrey
+
+body::-webkit-scrollbar-thumb 
+  border: 2.5px solid $cutebisque
+  background-color: $cutelightgrey
+
+
+*
+  box-sizing: inherit
+  &:before, &:after
+    box-sizing: inherit
+
+iframe
+  border: 0
+
+a
+  color: inherit
+
+.heading
+  font-family: "Delius Swash Caps", Ubuntu, 'open sans', cursive
+  font-weight: 700
+  letter-spacing: 1.5px
+
+.monospace
+  font-family: Courier New, Courier, monospace
+
+h1, h2, h3, p, a, br
+  &::selection
+    color: $cutebisque
+    background-color: $cutelightgrey
+
+.itim
+  font-family: Itim
+  font-weight: 500
+  line-height: 1.2
+
+.btn
+  background-color: $cutelightgrey
+  color: $cutebisque
+  padding: 4px
+  margin: 16px 16px 0 0 
+  font-size: calc(.2vw + .2vh + 1em)
+  display: block
+  transition:  .2s
+  box-shadow: 0 0 24px #0e0e0e
+
+  &:hover
+    color: darken($cutebisque, 5%)
+    transform: scale(1.4)
+    box-shadow:  0 0 32px #0e0e0e
+
+.flex
+  display: flex
+
+
+#contact
+  display: flex
+  flex-direction: column
+  justify-content: center
+  background-color: $cutegrey
+  height: 100vh
+  padding-bottom: 25vh
+  width: 100%
+  
+  h2
+    color: $cutebisque
+    margin: 24px auto
+    font-size: 2rem
+  
+  p
+    color: beige
+    margin: 0 auto
+    font-size: 1.2rem
