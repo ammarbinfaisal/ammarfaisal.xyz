@@ -18,7 +18,7 @@ const NoMatch = () => (
 				"-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
 		}}
 	>
-	<Helmet><title>404! Not Found</title></Helmet>
+		<Helmet><title>404! Not Found</title></Helmet>
 		<h1
 			style={{
 				fontWeight: 500,

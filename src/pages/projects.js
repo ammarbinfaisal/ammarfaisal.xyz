@@ -94,7 +94,7 @@ const projectsData = [
 		source: "https://github.com/ammarbinfaisal/Merriam-Webster-Bot",
 		link: "https://telegram.me/merriamwebsterbot",
 		title: "Merriam Webster Bot",
-		info: "a telegram bot which sends link to the Merriam&nbsp;Webster's webpage defining the word which you send it",
+		info: "a telegram bot which sends link to the Merriam Webster's webpage defining the word which you send it",
 		techUsed: "made in nodejs without using any telegram api wrapper",
 	}
 ]
