@@ -9,7 +9,7 @@ ReactGA.initialize('UA-134084954-2')
 if (typeof window !== 'undefined')
   ReactGA.pageview(window.location.pathname + window.location.search)
 
-const TemplateWrapper = ({ children, id, props }) => (
+const TemplateWrapper = ({ children, id, className, props }) => (
   <StaticQuery
     query={graphql`
       query HeadingQuery {
@@ -72,7 +72,7 @@ const TemplateWrapper = ({ children, id, props }) => (
           <meta name="description" content="Malik Ammar Faisal" />
           <meta name="author" content="Malik Ammar Faisal" />
         </Helmet>
-        <div id={id}>{children}</div>
+        <div id={id} className={className}>{children}</div>
       </div>
     )}
   />

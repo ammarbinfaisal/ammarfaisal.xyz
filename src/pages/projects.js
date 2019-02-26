@@ -1,5 +1,6 @@
 import React, { PureComponent, Component } from "react";
 import Helmet from "react-helmet";
+import Layout from "../components/Layout"
 
 class Project extends Component {
 	constructor(props) {
@@ -101,7 +102,7 @@ const projectsData = [
 class Projects extends PureComponent {
 	render() {
 		return (
-			<div id="projectspage" className="itim">
+			<Layout id="projectspage" className="itim">
 				<Helmet>
 					<title>Ammar's Projects</title>
 				</Helmet>
@@ -114,7 +115,7 @@ class Projects extends PureComponent {
 						projectsData.map((_project, i) => <Project {..._project} index={i} key={i}></Project>)
 					}
 				</div>
-			</div>
+			</Layout>
 		);
 	}
 }
