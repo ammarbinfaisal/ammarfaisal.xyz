@@ -11,7 +11,7 @@ module.exports = {
         includePaths: ['src/components/all.sass'],
       },
     },
-    {
+    // {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
     //   resolve: 'gatsby-source-filesystem',
     //   options: {
@@ -26,7 +26,7 @@ module.exports = {
     //     name: 'pages',
     //   },
     // },
-    {
+    // {
     //   resolve: 'gatsby-source-filesystem',
     //   options: {
     //     path: `${__dirname}/src/img`,
