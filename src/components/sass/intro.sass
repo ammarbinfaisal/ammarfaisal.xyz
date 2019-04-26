@@ -2,11 +2,13 @@
 
 #intro
   +columnify
-  transform: translateY(100%)
-  animation: 
-    name: fade-down
-    duration: 1.6s
-    fill-mode: forwards
+
+  @media (min-width: 651px)
+    transform: translateY(100%)
+    animation: 
+      name: fade-down
+      duration: 1.6s
+      fill-mode: forwards
 
   > h1
     margin: 7px 0

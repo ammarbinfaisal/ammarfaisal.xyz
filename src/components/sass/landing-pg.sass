@@ -8,10 +8,9 @@
   @media (min-width: 651px)
     grid-template-columns: 5fr 3fr
   @media (max-width: 650px)
-    grid-template-rows: 3fr 1fr
+    grid-template-rows: 5fr 2fr
   @media (max-height: 500px) and (max-width: 650px)
     height: 110vh
-    grid-template-rows: 5fr 2fr
     grid-gap: 5vh
 
   .fab, #intro > p
@@ -23,15 +22,6 @@
 
   @import 'social.sass'
   @import 'intro.sass'
-
-
-  /* ANIMATIONS */
-
-  animation:
-    name: bg-color-change
-    duration: 20s
-    timing-function: ease-out
-    iteration-count: infinite
 
   .colored
     color: $cutebisque
