@@ -36,8 +36,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `ammar.netlify.com`,
-        short_name: `ammar.netlify.com`,
+        name: `Malik Ammar Faisal`,
+        short_name: `Ammar`,
         start_url: `/`,
         background_color: `#1e1e1e`,
         theme_color: `#1e1e1e`,
@@ -97,7 +97,8 @@ module.exports = {
         purgeOnly: ['src/components/*/*.sass'],
       },
     },
-    // 'gatsby-plugin-sitemap',
+    'gatsby-plugin-offline',
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }
