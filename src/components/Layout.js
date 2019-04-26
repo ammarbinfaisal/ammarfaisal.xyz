@@ -7,7 +7,7 @@ import "./all.sass"
 
 class TemplateWrapper extends React.PureComponent {
   componentDidMount() {
-    ReactGA.initialize('UA-134084954-2')
+    ReactGA.initialize('UA-134084954-1')
     if (typeof window !== 'undefined')
       ReactGA.pageview(window.location.pathname + window.location.search)
   }
