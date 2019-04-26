@@ -12,7 +12,8 @@ class TemplateWrapper extends React.PureComponent {
       ReactGA.pageview(window.location.pathname + window.location.search)
   }
   render() {
-    const { children, id, className, props } = ths.props;
+    // eslint-disable-next-line
+    const { children, id, className, props } = this.props;
     return (
       <StaticQuery
         query={graphql`
