@@ -9,11 +9,12 @@ import Layout from '../../components/Layout'
 // }
 
 export default class Index extends React.Component {
-  render(){
-    return(
+  render() {
+    return (
       <Layout id="contact">
-        <h2 className="itim">Sorry - No super cool contact form here :( </h2>
-        <p  className="itim">you can mail me at <a href="mailto:ammar.malik.faisal.af@gmail.com">ammar.malik.faisal.af@gmail.com</a></p>
+        <h2>Let us talk!</h2>
+        <p className="itim">you can mail me at <a href="mailto:ammar.malik.faisal.af@gmail.com">ammar.malik.faisal.af@gmail.com</a></p>
+        <small className="itim">Sorry - No super cool contact form here :( </small>
       </Layout>
     )
   }
