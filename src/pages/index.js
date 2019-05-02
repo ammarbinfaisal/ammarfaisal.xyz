@@ -64,7 +64,7 @@ const Intro = () => (
             I can make webapps for you using reactjs on the frontend and nodejs on the backend.<br />
         </p>
         <div className="flex">
-            <Link to="/projects" className="btn itim">What I've made?</Link>
+            <Link to="/projects" className="btn itim">What have I made?</Link>
             <Link to="/contact" className="btn itim">Contact Me :)</Link>
 
         </div>
