@@ -47,27 +47,20 @@ const Social = () => (
 );
 
 const Intro = () => (
-  <div id="intro" className="sans">
-    <p className="itim">Hello there,</p>
-    <h1 className="heading colored">I am Ammar,</h1>
-    <p className="itim">
-      a hobbyist coder, currently in highschool who is learning and exploring
-      web development.
-      <br />
-      I can make webapps for you using reactjs on the frontend and nodejs on the
-      backend.
-      <br />
-    </p>
-    <div className="flex">
-      <Link to="/projects" className="btn itim">
-        What I've made?
-      </Link>
-      <Link to="/contact" className="btn itim">
-        Contact Me :)
-      </Link>
+    <div id="intro" className="sans">
+        <p className="itim">Hello there,</p>
+        <h1 className="heading colored">I am Ammar,</h1>
+        <p className="itim">
+            a hobbyist coder, currently in highschool who is learning and exploring web development.<br />
+            I can make webapps for you using reactjs on the frontend and nodejs on the backend.<br />
+        </p>
+        <div className="flex">
+            <Link to="/projects" className="btn itim">What have I made?</Link>
+            <Link to="/contact" className="btn itim">Contact Me :)</Link>
+
+        </div>
+        {/* <Footer /> */}
     </div>
-    {/* <Footer /> */}
-  </div>
 );
 
 class IndexPage extends PureComponent {
