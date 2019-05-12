@@ -39,7 +39,7 @@ const Social = () => (
           rel="noopener noreferrer"
           href="https://dev.to/ammarbinfaisal"
         >
-          <i class="fab fa-dev" title="ammarbinfaisal's DEV Profile" />
+          <i class="fab fa-dev" />
         </a>
       </li>
     </ul>
