@@ -11,6 +11,7 @@ const Social = () => (
           target="_blank"
           rel="noopener noreferrer"
           href="http://twitter.com/ammarbinfaisal1"
+          title="twitter"
         >
           <i className="fab fa-twitter" />
         </a>
@@ -19,7 +20,8 @@ const Social = () => (
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="http://github.com/ammarbinfaisal"
+          href="http://github.com/ammarbinfaisal" 
+          title="github"
         >
           <i className="fab fa-github" />
         </a>
@@ -29,6 +31,7 @@ const Social = () => (
           target="_blank"
           rel="noopener noreferrer"
           href="https://stackoverflow.com/users/8586459/ammar?tab=profile"
+          title="stackoverflow"
         >
           <i className="fab fa-stack-overflow" />
         </a>
@@ -38,8 +41,19 @@ const Social = () => (
           target="_blank"
           rel="noopener noreferrer"
           href="https://dev.to/ammarbinfaisal"
+          title="dev.to"
         >
           <i className="fab fa-dev" />
+        </a>
+      </li>
+            <li>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.reddit.com/user/ammarbinfaisal"
+          title="reddit"
+        > 
+  <i class="fab fa-reddit"></i>
         </a>
       </li>
     </ul>
