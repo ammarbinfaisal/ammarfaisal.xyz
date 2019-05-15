@@ -65,8 +65,7 @@ const Intro = () => (
         <p className="itim">Hello there,</p>
         <h1 className="heading colored">I am Ammar,</h1>
         <p className="itim">
-            a hobbyist coder, currently in highschool who is learning and exploring web development.<br />
-            I can make webapps for you using reactjs on the frontend and nodejs on the backend.<br />
+            a hobbyist coder, rookie web developer, currently in highschool, and fervent about computer science <br/>
         </p>
         <div className="flex">
             <Link to="/projects" className="btn itim">What have I made?</Link>
