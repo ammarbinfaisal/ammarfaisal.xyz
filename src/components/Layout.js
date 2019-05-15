@@ -70,8 +70,7 @@ class TemplateWrapper extends React.PureComponent {
               />
               <link rel="preconnect" href="https://fonts.gstatic.com" />
               <link rel="preconnect" href="https://use.fontawesome.com" />
-              <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-                crossorigin="anonymous" />
+              <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
               <meta name="google-site-verification" content="g4-OB7RMEZVWLAdcYQXD5RnTH6U77E7tvwtwxFyI3tI" />
               <meta name="description" content="Malik Ammar Faisal" />
               <meta name="author" content="Malik Ammar Faisal" />
