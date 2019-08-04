@@ -46,17 +46,10 @@ class Project extends Component {
 
 const projectsData = [
 	{
-		source: "https://prettinitgithub.com/ammarbinfaisal/taskss",
+		source: "github.com/ammarbinfaisal/taskss",
 		link: "https://npmjs.com/package/taskss",
 		title: "taskss",
 		info: "a terminal integrated todo list app.",
-		techUsed: "made in nodejs",
-	},
-	{
-		source: "https://prettinitgithub.com/ammarbinfaisal/depson",
-		link: "https://npmjs.com/package/depson",
-		title: "depson",
-		info: "a command line tool for cheking whether a nodejs project depends on a specific npm package.",
 		techUsed: "made in nodejs",
 	},
 	{
