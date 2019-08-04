@@ -64,14 +64,7 @@ const projectsData = [
 		title: "prettinit",
 		info: "a command line tool for setting up .prettierrc file.",
 		techUsed: "made in nodejs",
-	}, 
-	{
-		link: "https://dict.surge.sh",
-		title: "dict.surge.sh",
-		source: "https://github.com/ammarbinfaisal/dict",
-		info: "a dictionary progressive webapp.",
-		techUsed: "made with reactjs and uses an api which procures definitions from google's dictionary using webscraping.",
-	},
+	}
 ]
 
 class Projects extends PureComponent {
