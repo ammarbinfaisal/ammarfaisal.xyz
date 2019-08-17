@@ -74,10 +74,7 @@ class Projects extends PureComponent {
 				<Helmet>
 					<title>Ammar's Projects</title>
 				</Helmet>
-				<h2 className="heading">What I've made?</h2>
-				<p className="mark">
-					This list might not be up to date so check <a href="https://github.com/ammarbinfaisal">my&nbsp;github</a>
-				</p>
+				<h2 className="heading">My Projects</h2>
 				<div id="projects">
 					{
 						projectsData.map((_project, i) => <Project {..._project} index={i} key={i}></Project>)
