@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: ammarbinfaisal/ammarfaisal.xyz
   branch: master
 
 media_folder: static/img
@@ -7,7 +8,7 @@ public_folder: /img
 
 collections:
   - name: "projects"
-    label: "Blog"
+    label: "projects"
     folder: "src/pages/_projects"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
