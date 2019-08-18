@@ -14,7 +14,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Link", name: "link", widget: "text"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Made in", name: tectUsed, widget: "text"}
-      - {label: "Source", name: "source", widget: "text"}
+      - {label: "Link", name: "link", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Made in", name: tectUsed, widget: "string"}
+      - {label: "Source", name: "source", widget: "string"}
