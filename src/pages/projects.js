@@ -72,29 +72,6 @@ class Project extends Component {
   }
 }
 
-const projectsData = [
-  {
-    source: "github.com/ammarbinfaisal/taskss",
-    link: "https://npmjs.com/package/taskss",
-    title: "taskss",
-    description: "a terminal integrated todo list app.",
-    techUsed: "made in nodejs"
-  },
-  {
-    link: "https://cmsmunaliganj.com",
-    title: "cmsmunaliganj.com",
-    description: "my school's model united nations' website.",
-    techUsed: "made with gatsbyjs and styled with sass."
-  },
-  {
-    source: "https://github.com/ammarbinfaisal/prettinit",
-    link: "https://npmjs.com/package/prettinit",
-    title: "prettinit",
-    description: "a command line tool for setting up .prettierrc file.",
-    techUsed: "made in nodejs"
-  }
-];
-
 const Projects = props => {
   return (
     <StaticQuery
