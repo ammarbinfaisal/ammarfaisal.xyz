@@ -9,9 +9,9 @@ public_folder: /img
 collections:
   - name: "projects"
     label: "projects"
-    folder: "src/pages/_projects"
+    folder: "src/pages/projects"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Link", name: "link", widget: "string"}
