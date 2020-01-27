@@ -4,7 +4,6 @@ import Layout from "../components/Layout";
 
 const Social = () => (
   <div id="social">
-    <p className="heading colored">Find me on :</p>
     <ul>
       <li>
         <a
@@ -46,33 +45,14 @@ const Social = () => (
           <i className="fab fa-dev" />
         </a>
       </li>
-            <li>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.reddit.com/user/ammarbinfaisal"
-          title="reddit"
-        > 
-  <i class="fab fa-reddit"></i>
-        </a>
-      </li>
     </ul>
+    <a href="mailto:binfaisal.ammar@gmail.com" class="itim">binfaisal.ammar@gmail.com</a>
   </div>
 );
 
 const Intro = () => (
     <div id="intro" className="sans">
-        <p className="itim">Hello there,</p>
-        <h1 className="heading colored">I am Ammar,</h1>
-        <p className="itim">
-            a hobbyist coder, rookie web developer, currently in highschool, and fervent about computer science <br/>
-        </p>
-        <div className="flex">
-            <Link to="/projects" className="btn itim">What have I made?</Link>
-            <Link to="/contact" className="btn itim">Contact Me :)</Link>
-
-        </div>
-        {/* <Footer /> */}
+        <h1 className="heading colored">Malik Ammar Faisal</h1>
     </div>
 );
 

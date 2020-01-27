@@ -1,20 +1,13 @@
 @import 'mixins.sass'
 
 #indexpage  
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
   height: 100vh
-  display: grid
   background-color: $cutegrey
   overflow: hidden
-  @media (min-width: 651px)
-    grid-template-columns: 5fr 3fr
-  @media (max-width: 650px)
-    grid-template-rows: 5fr 2fr
-  @media (max-height: 500px) and (max-width: 650px)
-    height: 110vh
-    grid-gap: 5vh
-
-  .fab, #intro > p
-    color: beige
 
   > *
     padding: 0 5vw

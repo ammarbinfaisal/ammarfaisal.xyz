@@ -2,27 +2,13 @@
   
 #social
   +columnify
-  @media (min-width: 651px)
-    transform: translateY(-100%)
-    background-color: beige
-    animation: 
-      name: fade-up
-      duration: 1.6s
-      fill-mode: forwards
-
-  .heading
-    color: $cutegrey
-    @media screen and (max-width: 650px)
-      color: $cutebisque
-
-  > p
-    margin-bottom: 4px
-    font-size: calc(.5vw + .5vh + 1em)
-      
+  color: beige
+  a
+    text-align: center
   ul
     display: flex
-    flex-flow: row wrap
     align-items: center
+    flex-flow: row wrap
     li
       padding: 1vh calc(.5vw + 4px)
       @media screen and (min-width: 800px)
@@ -31,16 +17,17 @@
         margin: calc(.5vw + 5px)
 
     i
+      color: inherit
       @media screen and (min-width: 800px)
-        font-size: calc(.3vw + .3vh + 2.5em)
+        font-size: calc(.1vw + .1vh + 2.5em)
       @media screen and (max-width: 800px)
-        font-size: calc(.3vw + .2vh + 2em)
+        font-size: calc(.2vw + .2vh + 2em)
       transition:
         duration: 1s
         timing-function: cubic-bezier(0.63, 0.05, 0.28, 0.94)
 
       &:hover
-        transform: scale(2) rotate(360deg)
+        transform: scale(1.5) rotate(360deg)
 
 @keyframes fade-up
   0%
